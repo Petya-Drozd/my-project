@@ -1737,6 +1737,9 @@ circle {
   .print__block {
     width: 90%;
   }
+  .print__title {
+    min-width: 100%;
+  }
 }
 /*header styles*/
 .icon-menu {
