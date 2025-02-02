@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Projects</title>
+  <link rel="icon" href="images/fav.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div class="sideblock">
+  <button class="sideblock__toggle"> <span>→</span> </button>
+</div>
+<aside class="sidemenu">
+      <nav class="sidemenu__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link" data-anchor="tabs">Tabs</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-anchor="accordeon">Akordeon</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-anchor="skill">Circle Bar</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-anchor="countdown">Countdown</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-anchor="quiz">Quiz</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-anchor="beforeafter">Before/After</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-anchor="calculation">Calculation</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-anchor="search-country">Search Country</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-anchor="text-counter">Text Counter</a></li>
+        </ul>
+      </nav>
+</aside>
+<div class="plash"></div>
+<main class="main">
+  <section class="tabs section" id="tabs">
+    <div class="tabs__container container">
+      <div class="tabs__descr descr">
+        <h2 class="tabs__title descr__title">Tabs</h2>
+        <p class="tabs__info descr__info">Tabs are used to separate content into different panes where each pane is viewable one at a time.</p>
+      </div>
+      <div class="tabs__wrap ">
+        <ul class="tabs__header">
+          <li class="tabs__item" style="background-color:#92DCE5" id="html">HTML</li>
+          <li class="tabs__item" style="background-color:#F8F7F9" id="css">CSS</li>
+          <li class="tabs__item"style="background-color:#F7EC59" id="js">JavaScript</li>
+        </ul>
+        <div class="tabs__body active" style="background-color:#92DCE5" data-tab="html">
+          <div class="tabs__content">
+            <p class="tabs__text">
+              Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript, a programming language.
+            </p>
+          </div>
+        </div>
+        <div class="tabs__body " data-tab="css">
+          <div class="tabs__content">
+            <p class="tabs__text">
+              Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+            </p>
+          </div>
+        </div>
+        <div class="tabs__body" data-tab="js">
+          <div class="tabs__content">
+            <p class="tabs__text">
+              JavaScript , often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="accordeon section" id="accordeon">
+    <div class="accordeon__container container">
+      <div class="accordeon__descr descr">
+        <h2 class="accordeon__title descr__title">Accordion</h2>
+        <p class="accordeon__info descr__info">Accordion is a container-based control with vertically collapsible panels (vertical accordion) and stacked headers that expand or collapse one or more panels at a time within the available space.</p>
+      </div>
+      <div class="accordeon__row">
+        <div class="wrapper">
+            <div class="accordeon__item ">
+              <div class="accordeon__target" aria-expanded="false">
+                <h2 class="accordeon__title">HTTP (Hypertext Transfer Protocol)</h2>
+                <span class="accordeon__arrow"></span>
+              </div>
+              <div class="accordeon__content" aria-hidden="true">
+                HTTP (Hypertext Transfer Protocol) is the protocol used to transfer data over the web. It allows browsers to retrieve web pages from servers and display them to users.
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__target"  aria-expanded="false">
+                <h2 class="accordeon__title">DNS (Domain Name System)</h2>
+                <span class="accordeon__arrow"></span>
+              </div>
+              <div class="accordeon__content" aria-hidden="true">
+                "DNS (Domain Name System): A system that converts domain names (like example.com) into IP addresses, which are used by computers to communicate with each other."
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__target"  aria-expanded="false">
+                <h2 class="accordeon__title">FTP (File Transfer Protocol)</h2>
+                <span class="accordeon__arrow"></span>
+              </div>
+              <div class="accordeon__content" aria-hidden="true">
+                This is a protocol for transferring files between computers in a network. FTP allows you to upload and download files from servers.
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills section" id="skill">
+    <div class="skills__container container">
+      <div class="skills__descr descr">
+        <h2 class="skills__title descr__title">Circle Bar</h2>
+        <p class="skills__info descr__info">A circular progress bar is a visual representation that shows the progress of a task or operation in a circular form. It's a straightforward and useful way to represent progress and can enhance the appearance of your application or website</p>
+      </div>
+      <div class="skills__content">
+        <div class="skills__circlebar skill skill-container">
+          <div class="skill__item">
+            <div class="skill">
+              <div class="outer">
+                <div class="inner">
+                  <div class="number" data-num="90">
+                    0%
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+              </svg>
+            </div>
+            <p class="skill__text">HTML</p>
+          </div>
+          <div class="skill__item">
+            <div class="skill">
+              <div class="outer">
+                <div class="inner">
+                  <div class="number" data-num="65">
+                    0%
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+              </svg>
+            </div>
+            <p class="skill__text">CSS</p>
+          </div>
+          <div class="skill__item">
+            <div class="skill">
+              <div class="outer">
+                <div class="inner">
+                  <div class="number" data-num="80">
+                    0%
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+              </svg>
+            </div>
+            <p class="skill__text">JS</p>
+          </div>
+        </div>
+        <div class="skills__counter counter">
+          <div class="counter__item">
+            <svg class="counter__item_icon">
+              <use xlink:href="images/sprite.svg#clock"></use>
+            </svg>
+            <p class="counter__item_count" data-num="1800" data-inc="1" data-time="166">0</p>
+            <p class="counter__item_text">Work hours</p>
+          </div>
+          <div class="counter__item">
+            <svg class="counter__item_icon">
+              <use xlink:href="images/sprite.svg#coffee"></use>
+            </svg>
+            <p class="counter__item_count" data-num="711" data-inc="1" data-time="166">0</p>
+            <p class="counter__item_text">Cups of coffee</p>
+          </div>
+          <div class="counter__item">
+            <svg class="counter__item_icon">
+              <use xlink:href="images/sprite.svg#night"></use>
+            </svg>
+            <p class="counter__item_count" data-num="114" data-inc="1" data-time="166">0</p>
+            <p class="counter__item_text">Sleepless nights</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="countdown section" id="countdown">
+    <div class="countdown__container container">
+      <div class="skills__descr descr">
+        <h2 class="skills__title descr__title">Countdown timer</h2>
+        <p class="skills__info descr__info">Countdown Timer is a handy web-based tool that enables users to set countdowns for various events. It's built using JavaScript, offering a sleek and intuitive interface for precise time tracking and anticipation of important deadlines.</p>
+      </div>
+      <div class="countdown-wrapper">
+        <div class="timer">
+
+            <h1 class="title">Time left until the New Year:</h1>
+            <div id="year" class="year"></div>
+            <div class="countdown" id=countdown>
+                <div class="time">
+                    <h2 id="days">00</h2>
+                    <small>days</small>
+                </div>
+                <div class="dots">:</div>
+                <div class="time">
+                    <h2 id="hours">00</h2>
+                    <small>hours</small>
+                </div>
+                <div class="dots">:</div>
+                <div class="time">
+                    <h2 id="minutes">00</h2>
+                    <small>minutes</small>
+                </div>
+                <div class="dots">:</div>
+                <div class="time">
+                    <h2 id="seconds">00</h2>
+                    <small>seconds</small>
+                </div>
+            </div>
+            <div class="preloader" id="preloader">
+                <div class="lds-ripple"><div></div><div></div></div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section class="quiz section" id="quiz">
+    <div class="quiz__container container">
+      <div class="skills__descr descr">
+        <h2 class="skills__title descr__title">Quiz</h2>
+        <p class="skills__info descr__info">Quiz-Js is a simple and interactive quiz platform that allows users to test their knowledge on various topics.</p>
+      </div>
+        <div class="quiz__wrap">
+          <div class="quiz-content" id="quiz">
+
+        		<div class="quiz-header" id="header">
+        			<h2 class="title">Загружаем вопрос...</h2>
+
+        		</div>
+
+        		<ul class="quiz-list" id="list">
+        		</ul>
+
+        		<button class="quiz-submit submit" id="submit">Reply</button>
+        		<button class="quiz-submit submit hide" id="again">Try Again</button>
+
+        	</div>
+        </div>
+    </div>
+  </section>
+  <section class="beforeafter section" id="beforeafter">
+    <div class="beforeafter__container container">
+      <div class="beforeafter__descr descr">
+        <h2 class="beforeafter__title descr__title">Before/After Image Slider</h2>
+        <p class="beforeafter__info descr__info">Before and After Slider for website. Present comparisons between two images, ideal for highlighting transformations or showcasing product benefits.</p>
+      </div>
+      <div class="beforeafter__wrap" id="myslide">
+		<div class="beforeafter__img_dragger">
+			<div class="beforeafter__img_dragger-verticalline"></div>
+			<div class="beforeafter__img_dragger-circle"> ◄ ► </div>
+		</div>
+		<div class="beforeafter__img beforeafter__img--bottom" id="one">  <img src="images/pic1.jpeg"> </div>
+		<div class="beforeafter__img beforeafter__img--top" id="two"><img src="images/pic2.jpeg"></div>
+	</div>
+    </div>
+  </section>
+  <section class="calculation section" id="calculation">
+    <div class="calculation__container container">
+      <div class="calculation__descr descr">
+        <h2 class="calculation__title descr__title">Calculation</h2>
+        <p class="calculation__info descr__info">Interactive website calculators are tools that allow users to easily perform various calculations directly on your website. These can be calculators for the cost of your services, such as car rental, repair costs, etc.</p>
+      </div>
+      <div class="calculation__wrap">
+        <div class="calculation__choose choose">
+          <div class="choose__classification classification">
+            <h2 class="classification__title">Choose classification</h2>
+            <ul class="classification__option chosing-list" data-forresult="result-class">
+              <li class="classification__item chosing-list__item">
+                <label for="classification-econom">
+                  Econom
+                  <input class="listener" type="radio" name="classification" id="classification-econom" data-value="10">
+                </label>
+              </li>
+              <li class="classification__item chosing-list__item">
+                <label for="classification-comfort">
+                  Comfort
+                  <input class="listener" type="radio" name="classification" id="classification-comfort" data-value="20">
+                </label>
+              </li>
+              <li class="classification__item chosing-list__item">
+                <label for="classification-bussines">
+                  Bussines
+                  <input class="listener" type="radio" name="classification" id="classification-bussines" data-value="30">
+                </label>
+              </li>
+              <li class="classification__item chosing-list__item">
+                <label for="classification-premium">
+                  Premium
+                  <input class="listener" type="radio" name="classification" id="classification-premium" data-value="40">
+                </label>
+              </li>
+            </ul>
+          </div>
+          <!--Separator-->
+          <div class="choose__transmission transmission">
+            <h2 class="transmission__title">Choose transmission</h2>
+            <ul class="transmission__option chosing-list" data-forresult="result-transmission">
+              <li class="transmission__item chosing-list__item">
+                <label for="transmission-fwd">
+                  FWD
+                  <input class="listener" type="radio" name="transmission" id="transmission-fwd" data-value="0">
+                </label>
+              </li>
+              <li class="transmission__item chosing-list__item">
+                <label for="transmission-rwd">
+                  RWD
+                  <input class="listener" type="radio" name="transmission" id="transmission-rwd" data-value="2">
+                </label>
+              </li>
+              <li class="transmission__item chosing-list__item">
+                <label for="transmission-awd">
+                  AWD
+                  <input class="listener" type="radio" name="transmission" id="transmission-awd" data-value="5">
+                </label>
+              </li>
+            </ul>
+          </div>
+          <!-- Separator -->
+          <div class="choose__duration duration">
+            <h2 class="duration__title">Choose duration of rent</h2>
+            <div class="duration__content">
+              <div class="duration__label disabled-childs" for="duration-hours" data-forresult="result-duration">
+                <input class="duration__range listener-range" type="range" value="1" min="1" max="30" id="duration-hours">
+                <input class="duration__output" type="number" value="1">
+              </div>
+              <label for="hours-or-days">
+                Two drivers
+                <input type="checkbox" id="hours-or-days">
+              </label>
+            <!-- <label for="duration-days">
+              <input type="range" value="1" min="1" max="30" id="duration-days">
+              <span class="duration__output">1</span>
+            </label> -->
+          </div>
+          </div>
+          <!-- type of cars : cabriolet sedan -->
+          <!-- Separator -->
+          <div class="choose__options options">
+            <h2 class="options__title">Choose additional options</h2>
+            <ul class="options__content" data-forresult="result-option">
+              <li>
+                <label for="child-seat">
+                  <input class="listener" type="checkbox" id="child-seat" data-value="1">
+                  <span></span>
+                  Child seat
+                </label>
+              </li>
+              <li>
+                <label for="roof-carrier">
+                  <input class="listener" type="checkbox" id="roof-carrier" data-value="2">
+                  <span></span>
+                  Roof carrier
+                </label>
+              </li>
+              <li>
+                <label for="winter-tyres">
+                  <input class="listener" type="checkbox" id="winter-tyres" data-value="3">
+                  <span></span>
+                  Winter tyres
+                </label>
+              </li>
+              <li>
+                <label for="additional-insurance">
+                  <input class="listener" type="checkbox" id="additional-insurance" data-value="4">
+                  <span></span>
+                  Additional insurance
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="calculation__resulting resulting">
+          <div class="resulting__info">
+            <h2 class="resulting__title">Your order</h2>
+            <ul class="resulting__list">
+              <li class="resulting__item" >Class of car: — <span id="result-class">0 $</span> </li>
+              <li class="resulting__item" >Type of transmission: — <span id="result-transmission">0 $</span> </li>
+              <li class="resulting__item">Duration of rent: — <span id="result-duration">0 d</span></li>
+              <li class="resulting__item" >Options: — <span id="result-option">0 $</span></li>
+            </ul>
+          </div>
+          <div class="resulting__summary">
+            <h2 class="resulting__title">Summary Price:</h2>
+            <p class="resulting__price">0 $</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="countries section" id="search-country">
+    <div class="countries__container container">
+      <div class="countries__descr descr">
+        <h2 class="countries__title descr__title">Search Country</h2>
+        <p class="countries__info descr__info">With this program, you can find information about any country in the world, such as: capital, population, continent, language, etc.</p>
+      </div>
+      <div class="countries__wrap">
+        <div class="countries__block">
+          <div class="countries__block_title">
+            <h1 class="title">Find Country</h1>
+          </div>
+            <div class="countries__block_search ">
+              <ul class="countries__block_list"></ul>
+              <input type="text" class="search__country_input" placeholder="Enter Name Country"  disabled>
+            </div>
+            <div class="countries__block_info country-info">
+              <div class="country-info__flag">
+                <img src="https://placehold.co/250x170" alt="Here is a flag of searched country" class="flag-img">
+              </div>
+              <p class="country-info__capital">Caspital <span></span> </p>
+              <p class="country-info__population">Population <span></span> </p>
+              <p class="country-info__continent">Continent <span></span> </p>
+              <p class="country-info__independent">Independent <span></span> </p>
+              <p class="country-info__lang">Language <span></span> </p>
+              <p class="country-info__maps">View on <a href="#" target="_blank"></a> </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="print section" id="text-counter">
+    <div class="print__container container">
+      <div class="countries__descr descr">
+        <h2 class="countries__title descr__title">Text Counter</h2>
+        <p class="countries__info descr__info">My counter is a tool for checking the number of characters and words in your text. Simply paste your text, and you'll quickly and accurately get the count of characters and words. Spaces and conjunctions are included in the calculations.</p>
+      </div>
+      <div class="print__wrap"></div>
+        <div class="print__title">
+          <p class="print__title_text">Counter of <span class="typing-text" id="word"></span> </p>
+        </div>
+        <div class="print__block">
+          <div class="print__text">
+            <textarea class="textarea"></textarea>
+          </div>
+          <div class="print__result">
+            <ul class="result">
+              <li class="result__words"><span class="words">0</span> <span>Words</span></li>
+              <li class="result__characters"><span class="haracters">0</span> <span>Characters</span></li>
+              <li class="result__symbols"><span class="symbols">0</span> <span>Symbols</span></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </section>
+</main>
+
+    <footer class="footer">
+
+    </footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
+
