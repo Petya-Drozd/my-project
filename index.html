@@ -25,6 +25,8 @@
           <li class="nav__item"><a href="#" class="nav__link" data-anchor="calculation">Calculation</a></li>
           <li class="nav__item"><a href="#" class="nav__link" data-anchor="search-country">Search Country</a></li>
           <li class="nav__item"><a href="#" class="nav__link" data-anchor="text-counter">Text Counter</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-anchor="converter">Converter</a></li>
+          <li class="nav__item"><a href="#" class="nav__link" data-anchor="time-since-birthday">Life Time</a></li>
         </ul>
       </nav>
 </aside>
@@ -40,7 +42,7 @@
         <ul class="tabs__header">
           <li class="tabs__item" style="background-color:#92DCE5" id="html">HTML</li>
           <li class="tabs__item" style="background-color:#F8F7F9" id="css">CSS</li>
-          <li class="tabs__item"style="background-color:#F7EC59" id="js">JavaScript</li>
+          <li class="tabs__item" style="background-color:#F7EC59" id="js">JavaScript</li>
         </ul>
         <div class="tabs__body active" style="background-color:#92DCE5" data-tab="html">
           <div class="tabs__content">
@@ -75,7 +77,7 @@
       <div class="accordeon__row">
         <div class="wrapper">
             <div class="accordeon__item ">
-              <div class="accordeon__target" aria-expanded="false">
+              <div class="accordeon__target" aria-expanded="false" role="contentinfo">
                 <h2 class="accordeon__title">HTTP (Hypertext Transfer Protocol)</h2>
                 <span class="accordeon__arrow"></span>
               </div>
@@ -84,7 +86,7 @@
               </div>
             </div>
             <div class="accordeon__item">
-              <div class="accordeon__target"  aria-expanded="false">
+              <div class="accordeon__target"  aria-expanded="false" role="contentinfo">
                 <h2 class="accordeon__title">DNS (Domain Name System)</h2>
                 <span class="accordeon__arrow"></span>
               </div>
@@ -93,7 +95,7 @@
               </div>
             </div>
             <div class="accordeon__item">
-              <div class="accordeon__target"  aria-expanded="false">
+              <div class="accordeon__target"  aria-expanded="false" role="contentinfo">
                 <h2 class="accordeon__title">FTP (File Transfer Protocol)</h2>
                 <span class="accordeon__arrow"></span>
               </div>
@@ -124,7 +126,7 @@
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                 <defs>
-                  <linearGradient id="GradientColor">
+                  <linearGradient id="GradientColor1">
                     <stop offset="0%" stop-color="#e91e63" />
                     <stop offset="100%" stop-color="#673ab7" />
                   </linearGradient>
@@ -145,7 +147,7 @@
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                 <defs>
-                  <linearGradient id="GradientColor">
+                  <linearGradient id="GradientColor2">
                     <stop offset="0%" stop-color="#e91e63" />
                     <stop offset="100%" stop-color="#673ab7" />
                   </linearGradient>
@@ -166,7 +168,7 @@
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                 <defs>
-                  <linearGradient id="GradientColor">
+                  <linearGradient id="GradientColor3">
                     <stop offset="0%" stop-color="#e91e63" />
                     <stop offset="100%" stop-color="#673ab7" />
                   </linearGradient>
@@ -214,7 +216,7 @@
 
             <h1 class="title">Time left until the New Year:</h1>
             <div id="year" class="year"></div>
-            <div class="countdown" id=countdown>
+            <div class="countdown">
                 <div class="time">
                     <h2 id="days">00</h2>
                     <small>days</small>
@@ -249,7 +251,7 @@
         <p class="skills__info descr__info">Quiz-Js is a simple and interactive quiz platform that allows users to test their knowledge on various topics.</p>
       </div>
         <div class="quiz__wrap">
-          <div class="quiz-content" id="quiz">
+          <div class="quiz-content">
 
         		<div class="quiz-header" id="header">
         			<h2 class="title">Загружаем вопрос...</h2>
@@ -277,8 +279,8 @@
 			<div class="beforeafter__img_dragger-verticalline"></div>
 			<div class="beforeafter__img_dragger-circle"> ◄ ► </div>
 		</div>
-		<div class="beforeafter__img beforeafter__img--bottom" id="one">  <img src="images/pic1.jpeg"> </div>
-		<div class="beforeafter__img beforeafter__img--top" id="two"><img src="images/pic2.jpeg"></div>
+		<div class="beforeafter__img beforeafter__img--bottom" id="one">  <img src="images/pic1.jpeg" alt="image-before"> </div>
+		<div class="beforeafter__img beforeafter__img--top" id="two"><img src="images/pic2.jpeg" alt="image-after"></div>
 	</div>
     </div>
   </section>
@@ -347,7 +349,7 @@
           <div class="choose__duration duration">
             <h2 class="duration__title">Choose duration of rent</h2>
             <div class="duration__content">
-              <div class="duration__label disabled-childs" for="duration-hours" data-forresult="result-duration">
+              <div class="duration__label disabled-childs" data-forresult="result-duration">
                 <input class="duration__range listener-range" type="range" value="1" min="1" max="30" id="duration-hours">
                 <input class="duration__output" type="number" value="1">
               </div>
@@ -469,12 +471,82 @@
         </div>
     </div>
   </section>
+  <section class="section converter" id="converter">
+    <div class="converter__container container">
+      <div class="converter__descr descr">
+        <h2 class="converter__title descr__title">Converter</h2>
+        <p class="converter__info descr__info">My counter is a tool for checking the number of characters and words in your text. Simply paste your text, and you'll quickly and accurately get the count of characters and words. Spaces and conjunctions are included in the calculations.</p>
+      </div>
+      <div class="converter__choose_type" >
+        <p class="converter__choose_action">Choose type for convertation</p>
+        <select class="converter__choose_options" id="options">
+          <option value="temperature" selected>Celsius to Fahrenheit</option>
+          <option value="distance">Kilometrs to Miles</option>
+          <option value="weight">Kilograms to Pounds</option>
+        </select>
+      </div>
+      <div class="converter__wrap wrapper">
+        <div class="converter__wrap_input-box">
+          <h6 class="converter__wrap_title converter__title_1">Celsius</h6>
+          <input class="converter__wrap_input" type="number" id="field-1">
+        </div>
+        <i class="converter__wrap_icon">=</i>
+        <div class="converter__wrap_input-box">
+          <h6 class="converter__wrap_title converter__title_2">Fahrenheit</h6>
+          <input class="converter__wrap_input" type="number" id="field-2">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="longevity section" id="time-since-birthday">
+    <div class="longevity__container container">
+      <div class="longevity__descr descr">
+        <h2 class="longevity__title descr__title">Duration of life</h2>
+        <p class="longevity__info descr__info">Here you can calculate the length of your life in years, months, days, hours, minutes, and seconds.</p>
+      </div>
+      <div class="longevity__wrap">
+        <div class="longevity__enter_date">
+          <input type="date" class="longevity__input" id="date">
+          <input type="time" class="longevity__input qwert" id="time">
+          <input type="button" class="longevity__btn" value="Result">
+          <input type="button" class="longevity__btn longevity__btn_reset hide" value="Reset">
+        </div>
+        <div class="longevity__result_title">You have lived for</div>
+        <div class="longevity__result">
+          <div class="longevity__result_years">
+            <p class="longevity__result_value value-years">0</p>
+            <p class="longevity__result_text">Years</p>
+          </div>
+          <div class="longevity__result_months">
+            <p class="longevity__result_value value-months">0</p>
+            <p class="longevity__result_text">Monts</p>
+          </div>
+          <div class="longevity__result_days">
+            <p class="longevity__result_value value-days">0</p>
+            <p class="longevity__result_text">Days</p>
+          </div>
+          <div class="longevity__result_hours">
+            <p class="longevity__result_value value-hours">0</p>
+            <p class="longevity__result_text">Hours</p>
+          </div>
+          <div class="longevity__result_minutes">
+            <p class="longevity__result_value value-minutes">0</p>
+            <p class="longevity__result_text">Minutes</p>
+          </div>
+          <div class="longevity__result_seconds">
+            <p class="longevity__result_value value-seconds">0</p>
+            <p class="longevity__result_text">Seconds</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
     <footer class="footer">
 
     </footer>
-  </div>
+
   <script src="js/main.min.js"></script>
 </body>
 </html>
